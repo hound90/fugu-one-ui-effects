@@ -1,0 +1,24 @@
+//=============================================================================================
+//Это вставлять внутри zero-block в "Вставка HTML", этому элементу присвоить css класс и растянуть на ту область, которая требуется.
+<script>
+  window.UIEffects = window.UIEffects || {};
+  window.UIEffects.starfield = window.UIEffects.starfield || [];
+
+  window.UIEffects.starfield.push({
+    target: ".uc-hero-shadow .bg-shadow", // внутри блока .uc-hero-shadow берём слой .bg-shadow
+    insert: "first",                      // звезды вставляются первым слоем (позади содержимого .bg-shadow)
+    zIndex: 0,                            // z-index слоя со звездами
+
+    count: 200,                           // количество точек-звёзд
+
+    colors: ["#00D9FF"],                  // цвет звёзд
+    glow: 3,                              // свечение вокруг (0 0 2px)
+    blur: 0,                              // размытие (0..1)
+
+    opacity: [0.2, 1.0],                  // мерцание по прозрачности
+    scale: [1.5, 2.0],                    // мерцание по увеличению
+    duration: [2, 5],                     // скорость мерцания (сек)
+
+    sizeRand: false                       // делать размер строго 1px
+  });
+</script>

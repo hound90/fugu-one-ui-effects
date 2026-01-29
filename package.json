@@ -6,7 +6,10 @@
   "scripts": {
     "build:gold-stroke": "terser src/gold-stroke.js -c -m -o dist/gold-stroke.min.js && javascript-obfuscator dist/gold-stroke.min.js --output dist/gold-stroke.obf.js --rename-globals false",
     "build:goldfx": "terser src/goldfx.js -c -m -o dist/goldfx.min.js && javascript-obfuscator dist/goldfx.min.js --output dist/goldfx.obf.js --rename-globals false",
-    "build": "npm run build:gold-stroke && npm run build:goldfx"
+    "build:numberAnim": "terser src/numberAnim.js -c -m -o dist/numberAnim.min.js && javascript-obfuscator dist/numberAnim.min.js --output dist/numberAnim.obf.js --rename-globals false",
+    "build:particleAroundFX": "terser src/particleAroundFX.js -c -m -o dist/particleAroundFX.min.js && javascript-obfuscator dist/particleAroundFX.min.js --output dist/particleAroundFX.obf.js --rename-globals false",
+    "build:starsBg": "terser src/starsBg.js -c -m -o dist/starsBg.min.js && javascript-obfuscator dist/starsBg.min.js --output dist/starsBg.obf.js --rename-globals false",
+    "build": "npm run build:gold-stroke && npm run build:goldfx && npm run build:numberAnim && npm run build:particleAroundFX && npm run build:starsBg"
   },
   "devDependencies": {
     "terser": "^5.30.0",
