@@ -22,3 +22,7 @@
     sizeRand: false                       // делать размер строго 1px
   });
 </script>
+
+//=============================================================================================
+//Эту ссылку вставлять в T123 блок
+<script src="https://hound90.github.io/fugu-one-ui-effects/dist/starsBg.obf.js" defer></script>

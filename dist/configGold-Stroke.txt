@@ -57,5 +57,5 @@ enabled — true/false (включить/выключить текущий ко�
   ];
 </script>
 
-<!-- Подключение эффекта -->
+//Эту ссылку вставлять в отдельный T123 блок
 <script src="https://hound90.github.io/fugu-one-ui-effects/dist/gold-stroke.obf.js" defer></script>
